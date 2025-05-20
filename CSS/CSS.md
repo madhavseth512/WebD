@@ -105,5 +105,24 @@ This will convert our h2 heading text into red color.
 ```
 4. **Attribute Selector:** These select elements based on the presence or value of their attributes.
 ```HTML
-<p>
+<head>
+    <style>
+        p[draggable]{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <p draggable = "True">Drag me around</p>
+    <p>Dont Drag me</p>
+    <p>Dont Drag me</p>
+</body>
+
+```
+
+5. **Universal Selector:** It selects all the elements in the HTML file.
+```CSS 
+*{
+    color: green;
+}
 ```
