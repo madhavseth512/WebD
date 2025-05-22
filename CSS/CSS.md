@@ -7,11 +7,18 @@ There are three ways to add CSS to an HTML document.<br>
 
 1. **Inline CSS** - Using this we apply CSS styles directly to an individual element using the 'style' attribute (It is a global attribute). This is quite cumbersome as there are plenty of elements and if we want them to share same styles then we have to add inline CSS to each and every one of them. 
 ```HTML
-<p style = "color: blue fontsize: 16px">This paragraph tag contains text of blue color and 16 pixels font size.</p>
+<p style = "color: blue; fontsize: 16px;">This paragraph tag contains text of blue color and 16 pixels font size.</p>
 
-<html style = "background: blue">
-</html>
+"NOTE THAT HERE MULTIPLE PROPERTIES ARE GIVEN VALUES UNDER THE STYLES ATTRIBUTE ARE SEPERATED WITH THE SEMICOLON."
+
+<html style = "background : blue;">
+</html> - This is shorthand notation see image for reference. 
+
+<html style = "background-color: blue;">
+</html> - Here background-color focuses solely on BG color while background consists of other BG styles like images, repeat, attachment etc which while writing we can omit. Use the below image for reference to differentiate  between the two. 
 ```
+![Distinction between BG shorthand and BG color](../Images/Distinction%20in%20BG%20shorthand%20and%20BG%20color.png)
+
 2. **Internal/Embeded CSS** - Instead of placing style attribute within each element internal CSS uses style tags within the head tag. If our website has more than one webpages then it is better to use External CSS as we would have to repeat internal stylesheet across every webpage. Here the selector refers to the HTML element that we want to add styling element to. This selector basically acts as a filter or a search query that browser uses to find which HTML element we want to style. This selector basically can be HTML tag itself, classes, id attributes etc.  
 ```HTML
 <!DOCTYPE HTML>
@@ -23,7 +30,7 @@ There are three ways to add CSS to an HTML document.<br>
                 property: value;
                 background-color: yellow; 
             }
-
+                HERE ALSO DIFFERENT PROPERTIES AND THEIR VALUES ARE SEPERATED WITH SEMICOLON.
             selector2 {
                 another_property: another_value;
                 color: red;
@@ -50,6 +57,11 @@ There are three ways to add CSS to an HTML document.<br>
 Here this link tag is a self closing tag. The rel attribute specifies the relationship between linked document and the current document. Here, it indicates the linked file is a stylesheet document.
 Also the href attribute has the value of the file path of the related CSS code file.
 ```
+
+****
+**NOTE:** USE OF SEMICOLONS: These are primarily used within the style declarations to seperate individual style rules. **(property: value;)** whereas in HTML tag definitions, attributes are seperated by spaces and not semicolons.
+****
+ 
 ### CSS Selectors
 The CSS selector is the first part of the CSS rule that helps us choose which element we want to add CSS stying to. There are different ways in which we can select our elements. Some of these are: <br>
 
