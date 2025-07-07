@@ -102,3 +102,5 @@ This attribute is used for aligning the text. It contains of values like :<br>
 
 ### Inspecting CSS
 We can open developer tools by ctrl + shift + I. Here we get featues of elements tab, we get to visualize the box model of our website. In sources tab we get the original code from the website sources. Navigating and playing through it will help in getting familiar with the tool. 
+
+### CSS Box Model - Margin, Padding and Border
